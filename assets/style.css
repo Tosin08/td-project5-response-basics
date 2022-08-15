@@ -67,9 +67,8 @@ a{
 
 .content{
 background-color: #ebebeb;
-padding: 80px 100px 0;
+padding: 80px 100px;
 margin-top: 100px;
-
 
 }
 
@@ -93,24 +92,40 @@ margin-top: 100px;
 
 .content .brand-logo{
     padding-top: 50px;
+    display: flex;
+    flex-direction: column;
 }
 
-.content .brand{
-    width: 250px;
+.content .brand-logo .first-row{
+    display: flex;
+    justify-content: space-between;
    
-  
+}
+.content .brand-logo .second-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+   
+}
+.content .brand-logo img{
+    width: 30%;
+    border-radius: 5px;
 }
 
+/* ===================
+MEDIA QUERY
+====================== */
 
 /*
+@media screen and (min-width:768px){
+    
+} 
+
 @media screen and (min-width: 1024px){
 
 }
- @media screen and (min-width:768px){
-
-} 
 @media screen and (max-width: 414px){
-.wrapper .header-nav{
-display: flex;
+
 }
-} */
+
+*/
