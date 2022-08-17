@@ -116,11 +116,12 @@ margin-top: 100px;
 MEDIA QUERY
 ====================== */
 
-/*
+
 @media screen and (min-width:768px){
     
 } 
 
+/*
 @media screen and (min-width: 1024px){
 
 }
@@ -129,3 +130,17 @@ MEDIA QUERY
 }
 
 */
+@media(max-width: 414px){
+    .hero-banner .hero {
+        height: 500px;
+        display: block;
+        padding: 50px 50px 0;
+    }
+    .hero .title p {
+        width: auto;
+    }
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+}
