@@ -8,6 +8,7 @@
 .header-nav .nav{
     display: flex;
     height: 80px;
+    max-width: 1440;
     background-color: #157293;
     justify-content: space-between;
     padding: 25px 100px;
@@ -117,9 +118,98 @@ MEDIA QUERY
 ====================== */
 
 
-@media screen and (min-width:768px){
+@media screen and (max-width:414px){
+    .header-nav .nav{
+        display: flex;
+        height: 80px;
+        background-color: #157293;
+        justify-content: space-between;
+        padding: 25px 20px;
+    
+    }
+    .nav .nav-link{
+        display: none;
+    }
+    .hero-banner{
+        display: block;
+    }
+
+    .hero-banner .hero {
+        height: 500px;
+        display: block;
+        padding: 50px 20px 0;
+    }
+    .hero .title p {
+        width: auto;
+        line-height: 26px;
+    }
+    .hero img {
+        margin: 40px 0;
+        width: 100%;
+        height: auto;
+    } 
+    
+    .hero .title{
+        width: auto;
+    
+    }
+    .hero .title h1{
+        font-size: 28px;
+        color: #4d9aad;
+    }
+    .hero-banner .content{
+        background-color: #ebebeb;
+        padding: 80px 20px;
+        margin-top: 150px;
+        display: block;
+        
+        }
+        .hero-banner .content .content-title{
+        display: block;
+    
+    
+    }
+    .content .content-title h3{
+        font-size: 22px;
+        line-height: 30px;
+        color: #4d9aad;
+       
+    }
+    .content-title button{
+        margin: 24px 0;
+        width: -webkit-fill-available;
+        height: 50px;
+        background-color: #157293;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+    }
+    .content .brand-logo{
+        margin-top: 50px;
+        display: block;
+        width: auto;
+        padding: 0;
+       
+    }
+    .content .brand-logo .first-row{
+        display: block;
+       
+    }
+    .content .brand-logo .second-row{
+        display: block;
+        
+       
+    }
+    .content .brand-logo img{
+        width: auto;
+        border-radius: 5px;
+        margin: 8px 0;
+        
+    }
     
 } 
+
+
 
 /*
 @media screen and (min-width: 1024px){
@@ -130,17 +220,3 @@ MEDIA QUERY
 }
 
 */
-@media(max-width: 414px){
-    .hero-banner .hero {
-        height: 500px;
-        display: block;
-        padding: 50px 50px 0;
-    }
-    .hero .title p {
-        width: auto;
-    }
-    .hero img {
-        width: 100%;
-        height: auto;
-    }
-}
